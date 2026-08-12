@@ -27,3 +27,12 @@ npm run dev
 - \`npm run preview\` — visualiza o build de produção localmente
 - \`npm run lint\` — executa o linter
 - \`npm run format\` — formata o código com Prettier
+
+## Publicar no GitHub Pages
+
+Este projeto está configurado para gerar uma versão estática (prerender) e publicar automaticamente no GitHub Pages via GitHub Actions.
+
+1. No repositório do GitHub, vá em **Settings → Pages**.
+2. Em **Source**, selecione **GitHub Actions**.
+3. Faça um push para a branch `main` — o workflow em `.github/workflows/deploy.yml` builda e publica o site automaticamente.
+4. O site ficará disponível em `https://<seu-usuario>.github.io/oficialvanttoia/`.
