@@ -12,11 +12,4 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  // Static export for GitHub Pages (no server available there — prerender to plain HTML/CSS/JS).
-  nitro: {
-    preset: "static",
-  },
-  vite: {
-    base: "/oficialvanttoia/",
-  },
 });
